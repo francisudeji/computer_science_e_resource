@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Computer Science Department Library</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+    <style>
+      .primary-color {
+        background: #04a1e1;
+      }
+    </style>
+</head>
+<body>
+  <!-- modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width: 100%;margin-top: 0">
+      <div class="modal-content" style="height:100vh">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">Close</span>
+          </button>
+        </div>
+        <div class="modal-body viewer h-100" id="pdfviewer">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- modal -->
+
+   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="loginform">
+            <h3 class="text-center">Login to Continue</h3>
+            <div class="login-message"></div>
+            <form class="py-3 login-form">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" name="username" id="username" placeholder="Enter a Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" required>
+                  </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background: #04a1e1;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo/logo.png"  alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Programming</a>
+              <a class="dropdown-item" href="#">Data Structures and Algorithms</a>
+              <a class="dropdown-item" href="#">Networking</a>
+              <a class="dropdown-item" href="#">Internet</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://crutech.edu.ng" target="_blank">CRUTECH Portal</a>
+          </li>
+        </ul>
+
+        <button class="btn btn-light btn-lg ml-auto px-3 py-1" data-target="#loginModal" data-toggle="modal" role="button">Login</button>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="showcase">
+    <div class="jumbotron" style="background:transparent;">
+      <div class="container text-white">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mb-5">
+            <h1 class="display-5">Computer Science e-resource</h1>
+            <p class="lead text-light">Read from a collection of e-books ranging from topics on Programming, Networking, Hardware &amp; Maintenance, Data Structures and Algorithms etc<br>
+            </p>
+            <hr class="my-4">
+            <p>Utilise your time by reading a book a day with the Library open 24/7, Monday-Friday. </p>
+            <a class="btn btn-outline-light btn-lg" href="#books" role="button">Get Started</a>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center px-5">
+            <!-- <div class="card card-body bg-light py-5">
+              <h3 class="text-secondary">Search Books </h3>
+              <form class="py-5">
+                <div class="form-group">
+                  <label for="book-title text-secondary">Search Title</label>
+                  <input type="text" class="form-control" name="book-search" id="book-search" placeholder="Type to Search..." required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Search</button>
+              </form>
+            </div> -->
+            <img style="display: block;" class="img-responsive text-center mx-auto" width="100%" height="auto" src="assets/logo/ebook illustration.svg" alt="e-resource image">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <div class="search-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <div class="card card-body px-0 mb-5 bg-primary">
+              <form class="form form-inline mx-auto w-100">
+                <div class="form-group mx-auto">
+                  <input type="text" id="search" placeholder="Type to search books" class="form-control search" style="min-width: 300px">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="books-grid mt-5">
+      <div class="container">
+        <div class="cat" id="books">
+
+          <!-- CONTENT GOES HERE -->
+          <div class="row category ">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js""></script>
+  <script src="js/axios.min.js"></script>
+  <script src="js/pdfobject.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

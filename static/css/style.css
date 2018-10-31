@@ -1,0 +1,17 @@
+.pdf-card {
+  -webkit-box-shadow: 6px 10px 17px -1px rgba(0,0,0,0.45);
+  -moz-box-shadow: 6px 10px 17px -1px rgba(0,0,0,0.45);
+  box-shadow: 6px 10px 17px -1px rgba(0,0,0,0.45);
+}
+
+.showcase {
+  border-top: 1px solid #cccccc;
+  min-height: 50vh;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e69de+63,6db3f2+82 */
+  background: #04a1e1; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #04a1e1 50%, #1e69de 50%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #04a1e1 50%,#1e69de 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #04a1e1 50%,#1e69de 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e69de', endColorstr='#04a1e1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

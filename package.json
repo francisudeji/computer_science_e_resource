@@ -1,0 +1,19 @@
+{
+  "name": "CSC_e-Resource",
+  "version": "1.0.0",
+  "description": "A simple node app to organise books ",
+  "main": "app.js",
+  "author": "UDEJI FRANCIS",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.5"
+  }
+}
